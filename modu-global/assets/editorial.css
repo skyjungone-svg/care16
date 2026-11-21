@@ -70,6 +70,8 @@ body{background:#fff;color:#263447;-webkit-font-smoothing:antialiased}
 .product-brand{font:10px var(--sans);color:#7b8796;letter-spacing:1px;margin-bottom:9px}
 .product-name{font:400 14px/1.65 var(--sans);color:#293a4d;min-height:45px}
 .product-price{font-size:17px;color:#1a2b40;margin-top:5px}
+.product-detail-link{display:inline-block;margin-top:12px;color:#53647a;font-size:11px}
+.product-card:hover .product-detail-link,.product-card:focus-visible .product-detail-link{text-decoration:underline}
 .product-label{letter-spacing:.4px;font-size:10px;padding:7px 10px;backdrop-filter:blur(6px)}
 /* concept product bottle display — demo photos are not implied to be genuine */
 .placeholder-product{background:radial-gradient(circle at 64% 8%,#ffffff8c,transparent 56%),linear-gradient(145deg,#eef1ea,#cbd6c6);gap:20px}
@@ -103,6 +105,23 @@ body{background:#fff;color:#263447;-webkit-font-smoothing:antialiased}
 .detail-metadata{border-color:#e2e7ea}
 .panel{border:1px solid #e4e7eb;box-shadow:0 2px 12px #1b2e4406}
 .admin-warning{background:#fbf8f0;border-color:#ede2c9}
+.editor-fields{min-inline-size:0;margin:0;padding:0;border:0}
+.field input[type="checkbox"]{width:auto;vertical-align:middle}
+.admin-status p{margin:0}
+.admin-status .form-error{color:#a13d32}
+.inventory-product-link{color:#314961;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.cart-total>a.button{width:100%}
+.checkout-section{max-width:840px}
+.checkout-section h1{font:400 34px/1.5 var(--serif);margin:14px 0 20px}
+.checkout-section .panel>p{line-height:1.75}
+.checkout-options,.checkout-address{margin-bottom:22px}
+.checkout-options legend,.checkout-address legend{font-weight:600;margin-bottom:12px}
+.checkout-option{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:13px;
+ border:1px solid #d4dbe3;margin-bottom:8px;cursor:pointer}
+.checkout-option:has(input:checked){background:#f2f5f8;border-color:#71859b}
+.checkout-option small{display:block;color:#5a6878;line-height:1.6;margin-top:4px}
+.checkout-option-price{font-weight:600;white-space:nowrap}
+.checkout-status{color:#53647a;margin:12px 0 0;line-height:1.65}
 /* handheld */
 @media(max-width:1120px){.header-inner{padding:20px 28px;gap:25px}.nav-content{gap:30px}.section{padding:75px 30px}.hero-inner{padding:70px 52px}.brand-art{height:210px}.product-grid{gap:22px 16px}}
 @media(max-width:780px){
