@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="모두글로벌 공식 쇼핑몰 디자인 시연 — 브랜드별 상품 전시 및 상품 관리">
+<title>MODU GLOBAL — 모두글로벌</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/editorial.css">
+</head>
+<body>
+<div class="announcement">MODU GLOBAL <span>·</span> CURATED BRANDS, CONSIDERED LIVING <span class="preview-tag">DESIGN CONCEPT</span></div>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="main-logo" href="#/" aria-label="모두글로벌 홈">
+      <span class="main-logo-en">MODU GLOBAL</span>
+      <span class="main-logo-kr">모두글로벌</span>
+    </a>
+    <form id="searchForm" class="top-search" role="search"><input id="searchInput" type="search" placeholder="브랜드와 상품을 검색하세요" aria-label="상품 검색"><button type="submit" aria-label="검색"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.7"/><path d="m16 16 5 5"/></svg></button></form>
+    <div class="header-actions">
+      <a href="#/brands" aria-label="브랜드 보기">BRANDS</a>
+      <button id="cartTrigger" type="button" class="icon-button cart-trigger" aria-label="장바구니"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 13h-13L4 7Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" id="cartCount">0</span></button>
+      <a href="#/admin" class="admin-link">관리자</a>
+    </div>
+  </div>
+</header>
+<nav class="nav-bar" aria-label="주 메뉴"><div class="nav-content">
+  <a href="#/">HOME</a><a href="#/brands">SHOP BY BRAND</a>
+  <a href="#/brand/care16">Care16</a><a href="#/brand/whang">WHANG BIN COSMEDI</a><a href="#/brand/hans">HANS LaBelle</a>
+  <a href="#/all">ALL PRODUCTS</a>
+</div></nav>
+<main id="app" aria-live="polite"></main>
+<footer class="footer"><div class="footer-grid">
+  <div><div class="footer-brand">MODU GLOBAL</div><div class="footer-sub">모두글로벌</div><p>당신의 일상에 오래 남을 선택.<br>가치 있는 브랜드가 모이는 프리미엄 쇼핑 플랫폼.</p></div>
+  <div><h3>DISCOVER</h3><a href="#/brands">브랜드 소개</a><a href="#/all">전체 상품</a><a href="#/admin">상품 관리자 (시연)</a></div>
+  <div><h3>CUSTOMER CARE</h3><p>운영사 · 사업자등록정보 · 고객센터·개인정보처리방침은 정식 오픈 전 입력이 필요합니다.</p><p class="footer-small">본 사이트는 쇼핑몰 기능 시연용입니다. 주문·실결제·배송 처리는 수행하지 않습니다.</p></div>
+</div><div class="footer-bottom">© MODU GLOBAL <span>DEMO VERSION 4.0 · 2026</span></div></footer>
+<div class="overlay" id="cartOverlay" hidden></div><aside class="cart-drawer" id="cartDrawer" aria-label="장바구니" aria-hidden="true"><div class="drawer-title"><div><span class="small-caps">YOUR SELECTION</span><h2>장바구니</h2></div><button class="close-button" id="cartClose" aria-label="장바구니 닫기">×</button></div><div id="cartBody"></div></aside>
+<script src="assets/app.js"></script>
+</body>
+</html>
